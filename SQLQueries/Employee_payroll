@@ -29,3 +29,9 @@ alter table employee_payroll add gender char(1);
 update employee_payroll set gender='F' where id in (1,5);
 update employee_payroll set gender='M' where id not in (1,5);
 
+/*UC7*/
+select sum(salary) from employee_payroll where gender = 'M';
+select avg(salary),gender from employee_payroll group by gender;
+select min(salary) as min_salary from employee_payroll;
+select max(salary) as max_salary from employee_payroll;
+select count(id), gender from employee_payroll group by gender;
