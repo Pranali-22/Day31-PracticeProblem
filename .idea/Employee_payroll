@@ -1,0 +1,4 @@
+/*UC1*/
+Create database payroll_service;
+show databases;
+USE PAYROLL_SERVICE;
