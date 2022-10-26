@@ -17,3 +17,6 @@ insert into employee_payroll values(1,'Pranali',1000,current_date());
 insert into employee_payroll(empName,salary,startDate) values('AAA',1000,'2017-01-01'), ('zzzz',1000,current_date());
 insert into employee_payroll values(5,"Rutuja",500,'2020-01-01');
 insert into employee_payroll(empName,salary,startDate) values("xxx",500,current_date());
+
+/*UC4*/
+select * from employee_payroll;
