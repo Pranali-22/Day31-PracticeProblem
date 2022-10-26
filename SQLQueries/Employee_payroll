@@ -24,5 +24,8 @@ select * from employee_payroll;
 /*UC5*/
 select empName, salary from EMPLOYEE_PAYROLL where startDate between cast('2018-01-01' as date) and date(now());
 
-
+/*UC6*/
+alter table employee_payroll add gender char(1);
+update employee_payroll set gender='F' where id in (1,5);
+update employee_payroll set gender='M' where id not in (1,5);
 
