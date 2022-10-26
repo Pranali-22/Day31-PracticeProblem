@@ -1,0 +1,13 @@
+/*UC1*/
+Create database payroll_service;
+show databases;
+USE PAYROLL_SERVICE;
+
+/*UC2*/
+create table employee_payroll(
+id integer,
+empName varchar(20),
+salary integer,
+startDate date,
+primary key(id)
+);
